@@ -1,0 +1,1 @@
+wmdgen.exe windows.ui.composition windows.ui.composition.desktop windows.foundation.numerics windows.system windows.ui.xaml.controls windows.ui.xaml.hosting --output src/lib.rs
