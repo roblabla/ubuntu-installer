@@ -1,4 +1,4 @@
-use bindings::windows::{
+/*use bindings::windows::{
     system::DispatcherQueueController, ui::composition::desktop::DesktopWindowTarget,
 };
 use std::ffi::c_void;
@@ -46,7 +46,7 @@ impl CompositorDesktopInterop {
             Ok(result)
         }
     }
-}
+}*/
 
 #[link(name = "windowsapp")]
 extern "stdcall" {
@@ -63,7 +63,7 @@ pub enum RoInitType {
 pub fn ro_initialize(init_type: RoInitType) -> winrt::Result<()> {
     unsafe { RoInitialize(init_type).ok() }
 }
-
+/*
 #[link(name = "coremessaging")]
 extern "stdcall" {
     fn CreateDispatcherQueueController(
@@ -116,4 +116,4 @@ pub fn create_dispatcher_queue_controller_for_current_thread(
         DispatcherQueueThreadType::Current,
         DispatcherQueueThreadApartmentType::None,
     )
-}
+}*/
