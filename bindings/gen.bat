@@ -1,1 +1,1 @@
-wmdgen.exe windows.ui.composition windows.ui.composition.desktop windows.foundation.numerics windows.system windows.ui.xaml.controls windows.ui.xaml.hosting --output src/lib.rs
+wmdgen.exe windows.foundation.numerics windows.ui.xaml.controls windows.ui.xaml.hosting windows.devices.portable windows.networking.backgroundtransfer windows.storage --output src/lib.rs
